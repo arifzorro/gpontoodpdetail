@@ -114,8 +114,8 @@ class MY_Model extends CI_Model
      * Enables created_at and updated_at fields
      */
     protected $timestamps = TRUE;
-    protected $timestamps_format = 'Y-m-d H:i:s';
-
+    protected $timestamps_format = 'Y-m-d H:i:s'; //asli
+//    protected $timestamps_format = 'd-m-Y H:i:s';
     protected $_created_at_field;
     protected $_updated_at_field;
     protected $_deleted_at_field;

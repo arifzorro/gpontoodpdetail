@@ -34,6 +34,7 @@ class Data extends MY_Controller {
     }
 
     public function create() {
+
         $this->data['vendor'] = $this->vendor_model->get(1);
         //var_dump($this->vendor_model->get(1));
         $this->render('data/form');
@@ -46,9 +47,20 @@ class Data extends MY_Controller {
 //    }
 
     public function inputdatagpon(){
+       // echo time();
         //$this->data['vendor'] = $this->vendor_model->get(1);
         //   dd($this->data['vendor']);
         //  var_dump($this->vendor_model->get(1));
+
+//percobaan untuk set waktu time zone
+//        $timezone = date_default_timezone_get();
+//        echo "The current server timezone is: " . $timezone;
+//        $time=$_SERVER['REQUEST_TIME'];
+//        echo $time;
+//        date_default_timezone_set('Etc/GMT-8');
+//        $date = date('d/m/Y h:i:s a', time());
+//        echo $date;
+
         $this->render('data/formgpon');
     }
 
@@ -62,7 +74,7 @@ class Data extends MY_Controller {
        //var_dump($id);
         //maksudnya
        $this->data['data'] = $this->data_gpon_model->get($id);
-      //  var_dump($this->data['data']);
+        var_dump($this->data['data']);
         //$this->data['vendor'] = $this->data['data']->vendor;
         //var_dump($this->data['vendor']);
         $this->render('data/formgpon');
@@ -72,6 +84,7 @@ class Data extends MY_Controller {
         $data = $this->input->post();
 
         $data['tanggal'] = set_date($data['tanggal']);
+        //dd($data['tanggal']);
         $data = array_merge($data, user_timestamps($is_add_state));
         //dd($data);
         return $data;
@@ -80,8 +93,9 @@ class Data extends MY_Controller {
     public function save($id = null) {
         $is_add_state = is_null($id);
         $data = $this->_fetch_data($is_add_state);
+       // dd($data);
         //$kategori=$_POST['']
-       // $dd($data);
+       // dd($data);
        //   dd($id);
         //dd($is_add_state);
         if ($is_add_state) {
@@ -90,7 +104,7 @@ class Data extends MY_Controller {
         } else {
             $is_success = $this->data_gpon_model->update($data, $id);
         }
-        var_dump('akses');
+        //var_dump('akses');
         if ($is_success) set_flash_message( "Data telah tersimpan.");
         else set_flash_message("Data gagal tersimpan.", 'error');
 

@@ -122,8 +122,14 @@ function cast_to_array($param) {
         $param : array($param);
 }
 
+//function get_time() {
+//    return date('Y-m-d H:i:s', time());
+//} asli
+
 function get_time() {
-    return date('Y-m-d H:i:s', time());
+    date_default_timezone_set('Etc/GMT-8');
+    $date = date('d-m-Y h:i:s', time());
+    return $date;
 }
 
 function user_timestamps($is_add_state) {
