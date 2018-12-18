@@ -12,7 +12,16 @@
                     <i class="fa fa-file"></i> Semua Data
                 </a>
             </li>
-
+            <li>
+                <a href="<?php route('data/logbook'); ?>">
+                    <i class="fa fa-upload"></i> Input Logbook
+                </a>
+            </li>
+            <li>
+                <a href="<?php route('data/listlog'); ?>">
+                    <i class="fa fa-upload"></i> Logbook
+                </a>
+            </li>
             <?php if ($this->auth->is_administrator()): ?>
                 <li>
                     <a href="<?php route('user'); ?>">

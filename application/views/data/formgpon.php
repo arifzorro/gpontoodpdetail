@@ -9,7 +9,7 @@
             <form data-parsley-validate
                   class="form-horizontal form-label-left"
                   method="post"
-                  action="<?php isset($data->id) ? route("data/save", $data->id ): route("data/save"); ?>"
+                  action="<?php isset($data->id) ? route("data/save", $data->id): route("data/save"); ?>"
             >
 
 <!--                <div class="form-group">-->

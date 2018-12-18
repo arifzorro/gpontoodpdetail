@@ -8,6 +8,7 @@ class Data extends MY_Controller {
         $this->load->model('data_model');
         $this->load->model('vendor_model');
         $this->load->model('data_gpon_model');
+        $this->load->model('logbook_model');
         $this->load->helper('datatable');
         $this->load->library('datatables');
     }
@@ -30,6 +31,23 @@ class Data extends MY_Controller {
             return print_r($this->data_gpon_model->get_all_dt($filter));
         } else {
             $this->render('data/index');
+        }
+    }
+
+    public function listlog() {
+
+        if ($this->input->is_ajax_request()) {
+
+            $from_tgl   = $this->input->post('from_tgl');
+            $to_tgl     = $this->input->post('to_tgl');
+            $filter = (object) array(
+                'from_tgl' => !empty_or_null($from_tgl) ? set_date($from_tgl) : null,
+                'to_tgl' => !empty_or_null($to_tgl) ? set_date($to_tgl) : (!empty_or_null($from_tgl) ? set_date($from_tgl) : null),
+            );
+            //var_dump($this->data_gpon_model->get_all_dt($filter));
+            return print_r($this->logbook_model->get_all_dt($filter));
+        } else {
+            $this->render('data/listlog');
         }
     }
 
@@ -63,7 +81,9 @@ class Data extends MY_Controller {
 
         $this->render('data/formgpon');
     }
-
+    public function  logbook(){
+        $this->render('data/formlogbook');
+    }
 
     public function edit($id) {
         //dd($id);
@@ -89,6 +109,7 @@ class Data extends MY_Controller {
         //dd($data);
         return $data;
     }
+
 
     public function save($id = null) {
         $is_add_state = is_null($id);
@@ -119,6 +140,28 @@ class Data extends MY_Controller {
         } else {
             echo "Data berhasil dihapus.";
         }
+    }
+
+    public function savelog($id = null) {
+        $is_add_state = is_null($id);
+        $data = $this->_fetch_data($is_add_state);
+        // dd($data);
+        //$kategori=$_POST['']
+        // dd($data);
+        //   dd($id);
+        //dd($is_add_state);
+        if ($is_add_state) {
+
+            $is_success = $this->logbook_model->insert($data);
+        } else {
+            $is_success = $this->logbook_model->update($data, $id);
+        }
+        //var_dump('akses');
+        if ($is_success) set_flash_message( "Data telah tersimpan.");
+        else set_flash_message("Data gagal tersimpan.", 'error');
+
+        if ($is_add_state) redirect(base_url('data/logbook'));
+        else redirect(base_url('data'));
     }
 
 }
