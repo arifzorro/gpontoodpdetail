@@ -28,7 +28,7 @@ class logbook_model extends MY_Model {
         ")
             ->from("$this->table d")
             ->edit_column('tanggal', '$1', "show_date(tanggal)")
-            ->add_column('action', '$1', "set_actions(id, data)");//langsung pake nama field di database dengan id_soal
+            ->add_column('action', '$1', "set_actionslog(id, data)");//langsung pake nama field di database dengan id_soal
 
         if (!is_null($filter->from_tgl)) {
             $this->datatables->where("d.tgl_ganti >= '$filter->from_tgl'");
