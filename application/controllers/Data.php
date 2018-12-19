@@ -109,7 +109,7 @@ class Data extends MY_Controller {
 //        $this->render('data/formsoal');
         //var_dump($id);
         //maksudnya
-        $this->data['data'] = $this->data_gpon_model->get($id);
+        $this->data['data'] = $this->logbook_model->get($id);
         var_dump($this->data['data']);
         //$this->data['vendor'] = $this->data['data']->vendor;
         //var_dump($this->data['vendor']);
@@ -177,7 +177,7 @@ class Data extends MY_Controller {
         else set_flash_message("Data gagal tersimpan.", 'error');
 
         if ($is_add_state) redirect(base_url('data/logbook'));
-        else redirect(base_url('data'));
+        else redirect(base_url('data/listlog'));
     }
 
 }
