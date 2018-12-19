@@ -189,4 +189,9 @@ class Data extends MY_Controller {
         else redirect(base_url('data/listlog'));
     }
 
+    public function chart(){
+        $this->render('chart/chartgraph');
+
+    }
+
 }
