@@ -157,6 +157,15 @@ class Data extends MY_Controller {
             echo "Data berhasil dihapus.";
         }
     }
+    public function deletelog($id) {
+        $success = $this->logbook_model->delete(array('id' => $id));
+        if ($success === FALSE) {
+            return NULL;
+        } else {
+            echo "Data berhasil dihapus.";
+        }
+    }
+
 
     public function savelog($id = null) {
         $is_add_state = is_null($id);
