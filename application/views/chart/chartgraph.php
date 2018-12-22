@@ -26,23 +26,43 @@
                     <div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;">
                         <div class="flot-tick-label tickLabel" style="position: absolute; top: 247px; left: 12px; text-align: right;">0</div>
                         <div class="flot-tick-label tickLabel" style="position: absolute; top: 206px; left: 6px; text-align: right;">20</div>
-                        <div class="flot-tick-label tickLabel" style="position: absolute; top: 165px; left: 6px; text-align: right;">40</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 124px; left: 6px; text-align: right;">60</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 83px; left: 6px; text-align: right;">80</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 42px; left: 0px; text-align: right;">100</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 1px; left: 0px; text-align: right;">120</div></div></div><canvas class="flot-overlay" width="1170" height="280" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1170px; height: 280px;"></canvas><div class="legend"><div style="position: absolute; width: 71px; height: 15px; top: -17px; right: 21px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div><table style="position:absolute;top:-17px;right:21px;;font-size:smaller;color:#3f3f3f"><tbody><tr><td class="legendColorBox"><div style="border:1px solid null;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(150,202,89);overflow:hidden"></div></div></td><td class="legendLabel">Email Sent&nbsp;&nbsp;</td></tr></tbody></table></div></div>
+                        <div class="flot-tick-label tickLabel" style="position: absolute; top: 165px; left: 6px; text-align: right;">40</div>
+                        <div class="flot-tick-label tickLabel" style="position: absolute; top: 124px; left: 6px; text-align: right;">60</div>
+                        <div class="flot-tick-label tickLabel" style="position: absolute; top: 83px; left: 6px; text-align: right;">80</div>
+                        <div class="flot-tick-label tickLabel" style="position: absolute; top: 42px; left: 0px; text-align: right;">100</div>
+                        <div class="flot-tick-label tickLabel" style="position: absolute; top: 1px; left: 0px; text-align: right;">120</div>
+                    </div>
+                </div>
+                <canvas class="flot-overlay" width="1170" height="280" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1170px; height: 280px;"></canvas>
+                <div class="legend">
+                    <div style="position: absolute; width: 71px; height: 15px; top: -17px; right: 21px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div>
+                    <table style="position:absolute;top:-17px;right:21px;;font-size:smaller;color:#3f3f3f">
+                        <tbody>
+                        <tr>
+                            <td class="legendColorBox">
+                                <div style="border:1px solid null;padding:1px">
+                                    <div style="width:4px;height:0;border:5px solid rgb(150,202,89);overflow:hidden"></div>
+                                </div>
+                            </td>
+                            <td class="legendLabel">Email Sent&nbsp;&nbsp;</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
         <div class="tiles">
             <div class="col-md-4 tile">
                 <span>Total Sessions</span>
                 <h2>231,809</h2>
-                <span class="sparkline11 graph" style="height: 160px;"><canvas width="198" height="40" style="display: inline-block; width: 198px; height: 40px; vertical-align: top;"></canvas></span>
             </div>
             <div class="col-md-4 tile">
                 <span>Total Revenue</span>
                 <h2>$231,809</h2>
-                <span class="sparkline22 graph" style="height: 160px;"><canvas width="200" height="40" style="display: inline-block; width: 200px; height: 40px; vertical-align: top;"></canvas></span>
             </div>
             <div class="col-md-4 tile">
                 <span>Total Sessions</span>
                 <h2>231,809</h2>
-                <span class="sparkline11 graph" style="height: 160px;"><canvas width="198" height="40" style="display: inline-block; width: 198px; height: 40px; vertical-align: top;"></canvas></span>
             </div>
         </div>
 
