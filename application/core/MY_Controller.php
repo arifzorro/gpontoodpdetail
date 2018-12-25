@@ -30,7 +30,7 @@ class MY_Controller extends CI_Controller{
 
         } else {
             $content = $this->load->view($view, $data, TRUE);
-            //var_dump($content);
+
             $section = $this->parse_section($content);
 
             $layout_data['js']      = is_null($section) ? NULL : $section['js'];

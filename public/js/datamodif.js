@@ -36,6 +36,7 @@ var table = $('#table_data').DataTable({
         {"data": "action", orderable: false, searchable: false},
         {"data": "created_at"}, //urutan isi pada data tabel
         {"data": "ipgpon"},
+        {"data": "tipe_gpon"},
         {"data": "modul"},
         {"data": "slot"},
         {"data": "port"},

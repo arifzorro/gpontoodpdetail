@@ -33,6 +33,7 @@
                             <th>Action</th>
                             <th>Tanggal Input</th>
                             <th>IPGPON</th>
+                            <th>Tipe</th>
                             <th>Modul</th>
                             <th>Slot</th>
                             <th>Port</th>

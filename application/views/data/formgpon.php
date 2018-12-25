@@ -42,6 +42,16 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Tipe</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <select id="heard" class="form-control" required="" name="tipe_gpon">
+                            <option value=""><?php show_ifsetoption($data->tipe_gpon)?></option>
+                            <option value="ALU" name="ZTE">ZTE</option>
+                            <option value="ALU" name="ZTE">ALU</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Modul</label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <input value="<?php show_ifset($data->modul);?>"
