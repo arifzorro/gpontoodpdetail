@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/application/views/chart/chartmodif.php" line="60" />
+    <bookmark url="file://$PROJECT_DIR$/application/views/chart/chartmodif.php" line="65" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96d19341-8441-4a7e-8c32-0c2037a2748b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Data.php" afterPath="$PROJECT_DIR$/application/controllers/Data.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/chart/chartmodif.php" afterPath="$PROJECT_DIR$/application/views/chart/chartmodif.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,11 +31,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Data.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Data.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="218" column="1" lean-forward="false" selection-start-line="218" selection-start-column="1" selection-end-line="218" selection-end-column="1" />
+            <state relative-caret-position="3893">
+              <caret line="229" column="37" lean-forward="false" selection-start-line="229" selection-start-column="37" selection-end-line="229" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chartmodif.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/chart/chartmodif.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="68" column="18" lean-forward="false" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/libraries/Session/Session.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2448">
+              <caret line="144" column="65" lean-forward="false" selection-start-line="144" selection-start-column="65" selection-end-line="144" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listlog.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/data/listlog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logbook.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/logbook.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -43,37 +85,7 @@
         <entry file="file://$PROJECT_DIR$/application/models/logbook_model.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
-              <caret line="29" column="64" lean-forward="true" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listlog.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/data/listlog.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logbook.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/logbook.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/constants.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -86,35 +98,6 @@
               <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
               <folding>
                 <marker date="1545740336123" expanded="true" signature="569:676" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="1039:2830" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="1280:2828" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="1601:2239" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="2308:2349" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="2441:2633" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="2863:2975" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="2918:2973" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="3028:3291" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="3051:3276" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="3082:3122" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="3148:3223" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="3335:3412" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="3478:3606" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="3677:3810" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="3814:3848" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="3883:3946" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="4046:4150" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="4194:4443" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="4246:4377" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="4268:4370" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="4385:4441" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="4448:4551" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="4611:4743" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="4671:4740" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="4677:4739" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="4772:4910" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="4940:5037" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="5086:5348" ph="..." />
-                <marker date="1545740336123" expanded="true" signature="5157:5329" ph="..." />
               </folding>
             </state>
           </provider>
@@ -124,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/application/models/data_gpon_model.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
-              <caret line="39" column="58" lean-forward="true" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
+              <caret line="39" column="58" lean-forward="false" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -133,8 +116,8 @@
       <file leaf-file-name="datamodif.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/datamodif.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+            <state relative-caret-position="493">
+              <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -143,8 +126,8 @@
       <file leaf-file-name="MY_Controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            <state relative-caret-position="51">
+              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -162,15 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ac</find>
-      <find>acti</find>
-      <find>a</find>
-      <find>act</find>
-      <find>actio</find>
-      <find>action</find>
-      <find>action_r</find>
-      <find>action_</find>
-      <find>action_ta</find>
       <find>action_tab</find>
       <find>action_tabl</find>
       <find>action_table</find>
@@ -188,10 +162,19 @@
       <find>flot-x-axis</find>
       <find>flot-base</find>
       <find>chart_plot_02</find>
-      <find>$</find>
-      <find>$.ajax</find>
       <find>datepicker from_tgl form-control input-sm</find>
+      <find>aja</find>
+      <find>$.aja</find>
+      <find>table</find>
+      <find>a</find>
+      <find>aj</find>
+      <find>ajax</find>
+      <find>$</find>
+      <find>$.</find>
+      <find>$.ajax</find>
+      <find>d</find>
       <find>data</find>
+      <find>data:</find>
     </findStrings>
     <replaceStrings>
       <replace>data_gpon_model</replace>
@@ -256,9 +239,9 @@
         <option value="$PROJECT_DIR$/public/js/chartjs/chart.js" />
         <option value="$PROJECT_DIR$/application/views/chart/chartgraph.php" />
         <option value="$PROJECT_DIR$/application/core/MY_Controller.php" />
-        <option value="$PROJECT_DIR$/application/views/chart/chartmodif.php" />
         <option value="$PROJECT_DIR$/public/js/datamodif.js" />
         <option value="$PROJECT_DIR$/application/controllers/Data.php" />
+        <option value="$PROJECT_DIR$/application/views/chart/chartmodif.php" />
       </list>
     </option>
   </component>
@@ -296,7 +279,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -571,17 +554,21 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../agbc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\gpontoodpdetail\public\css\chart" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp\www\gpontoodp\application\views\commons" />
       <recent name="C:\wamp\www\gpontoodp\public\js" />
@@ -589,121 +576,6 @@
       <recent name="C:\wamp\www\gpontoodp\application\models" />
       <recent name="$PROJECT_DIR$/application/views/data" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\gpontoodpdetail\public\css\chart" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/config/database.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/helpers/commons_helper.php</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -842,7 +714,11 @@
       <workItem from="1545693795250" duration="1701000" />
       <workItem from="1545705955414" duration="8922000" />
       <workItem from="1545729079939" duration="4154000" />
-      <workItem from="1545740307302" duration="84000" />
+      <workItem from="1545740307302" duration="112000" />
+      <workItem from="1546038435162" duration="1796000" />
+      <workItem from="1546047959618" duration="2342000" />
+      <workItem from="1546168537477" duration="6166000" />
+      <workItem from="1546300669501" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="datatabel edit 1">
       <created>1543568703332</created>
@@ -956,11 +832,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545735623677</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="tes chart">
+      <created>1545740396070</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1545740396070</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189865000" />
+    <option name="totallyTimeSpent" value="200235000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -974,17 +857,17 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17488076" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13473769" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1399689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.50852877" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1049,13 +932,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/data/formlogbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="72" lean-forward="false" selection-start-line="76" selection-start-column="72" selection-end-line="76" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/chart/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1326,23 +1202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="668">
           <caret line="172" column="88" lean-forward="false" selection-start-line="172" selection-start-column="88" selection-end-line="172" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/chart/chartmodif.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="62" lean-forward="false" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/datamodif.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1350,14 +1209,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/data_gpon_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
-          <caret line="39" column="58" lean-forward="true" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
+          <caret line="39" column="58" lean-forward="false" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -1375,35 +1233,6 @@
           <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
           <folding>
             <marker date="1545740336123" expanded="true" signature="569:676" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="1039:2830" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="1280:2828" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="1601:2239" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="2308:2349" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="2441:2633" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="2863:2975" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="2918:2973" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="3028:3291" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="3051:3276" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="3082:3122" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="3148:3223" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="3335:3412" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="3478:3606" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="3677:3810" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="3814:3848" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="3883:3946" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="4046:4150" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="4194:4443" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="4246:4377" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="4268:4370" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="4385:4441" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="4448:4551" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="4611:4743" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="4671:4740" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="4677:4739" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="4772:4910" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="4940:5037" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="5086:5348" ph="..." />
-            <marker date="1545740336123" expanded="true" signature="5157:5329" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1411,20 +1240,20 @@
     <entry file="file://$PROJECT_DIR$/application/models/logbook_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
-          <caret line="29" column="64" lean-forward="true" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/data/listlog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/logbook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/datamodif.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
@@ -1432,18 +1261,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/system/libraries/Session/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="65" lean-forward="false" selection-start-line="144" selection-start-column="65" selection-end-line="144" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/data/listlog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        <state relative-caret-position="51">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="218" column="1" lean-forward="false" selection-start-line="218" selection-start-column="1" selection-end-line="218" selection-end-column="1" />
+        <state relative-caret-position="3893">
+          <caret line="229" column="37" lean-forward="false" selection-start-line="229" selection-start-column="37" selection-end-line="229" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/chart/chartmodif.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="68" column="18" lean-forward="false" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
           <folding />
         </state>
       </provider>

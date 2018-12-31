@@ -190,20 +190,22 @@ class Data extends MY_Controller {
     }
 
     public function chart(){
-        $from_tgl   = $this->input->post('from_tgl');
-        $to_tgl     = $this->input->post('to_tgl');
-        $filter = (object) array(
-            'from_tgl' => !empty_or_null($from_tgl) ? set_date($from_tgl) : null,
-            'to_tgl' => !empty_or_null($to_tgl) ? set_date($to_tgl) : (!empty_or_null($from_tgl) ? set_date($from_tgl) : null),
-        );
+
+        //tes dari php ke javascrip
+//        $from_tgl   = $this->input->post('from_tgl');
+//        $to_tgl     = $this->input->post('to_tgl');
+//        $filter = (object) array(
+//            'from_tgl' => !empty_or_null($from_tgl) ? set_date($from_tgl) : null,
+//            'to_tgl' => !empty_or_null($to_tgl) ? set_date($to_tgl) : (!empty_or_null($from_tgl) ? set_date($from_tgl) : null),
+//        );
         //mengambil data
-        $this->data=$this->logbook_model->get_all_dt($filter);
-        var_dump($this->data);
+//        $this->data=$this->logbook_model->get_all_dt($filter);
+        //var_dump($this->data);
 
 
         //cara melihat isi objek di json
-        $json_object=json_decode($this->data);
-        var_dump($json_object->data);
+      //  $json_object=json_decode($this->data);
+      //  var_dump($json_object->data);
 
       //  print_r($this->logbook_model->get_all_dt($filter));
 
@@ -212,8 +214,22 @@ class Data extends MY_Controller {
 //        }
 
 
-        //$this->render('chart/chartmodif');
+        $this->render('chart/chartmodif');
 
     }
 
-}
+    public function ambildatachart(){
+        //tes dari php ke javascrip
+        $from_tgl   = $this->input->post('from_tgl');
+        $to_tgl     = $this->input->post('to_tgl');
+        $filter = (object) array(
+            'from_tgl' => !empty_or_null($from_tgl) ? set_date($from_tgl) : null,
+            'to_tgl' => !empty_or_null($to_tgl) ? set_date($to_tgl) : (!empty_or_null($from_tgl) ? set_date($from_tgl) : null),
+        );
+        //mengambil data
+        $this->data=$this->logbook_model->get_all_dt($filter);
+        echo json_encode($this->data);
+
+    }
+
+    }
