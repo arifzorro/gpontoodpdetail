@@ -43,8 +43,7 @@ Class Chart_model extends CI_Model{
         $recodrs=$query->result();
         $data['records']=$query->result_array();
         //dd($recodrs);
-       dd($data['records']);
-        die();
-        return $query;
+       //dd($data['records']);
+        return  $data['records'];
     }
 }

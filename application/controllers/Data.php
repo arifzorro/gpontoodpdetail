@@ -194,7 +194,11 @@ class Data extends MY_Controller {
 
     public function chart(){
 
-        $this->Chart_model->fetch_data();
+       $this->data=$this->Chart_model->fetch_data();
+//       var_dump($this->data);
+//       echo $this->data->tanggal;
+
+
         //tes dari php ke javascrip
 //        $from_tgl   = $this->input->post('from_tgl');
 //        $to_tgl     = $this->input->post('to_tgl');
@@ -204,6 +208,7 @@ class Data extends MY_Controller {
 //        );
         //mengambil data
 //        $this->data=$this->logbook_model->get_all_dt($filter);
+//        echo $this->data->tanggal;
         //var_dump($this->data);
 
 
@@ -219,6 +224,7 @@ class Data extends MY_Controller {
 
 
         $this->render('chart/chartmodif');
+       // $this->load->view('chart/chartmodif');
 
     }
 
