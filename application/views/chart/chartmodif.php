@@ -66,7 +66,7 @@
             url:"ambildatachart",
             success:function (result) {
               //  console.log(data["tanggal"]);
-                //var data=JSON.parse(data["data"]);
+                //gitvar data=JSON.parse(data["data"]);
                 //var hasilDB=JSON.parse(result);
 
             }

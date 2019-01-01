@@ -9,6 +9,9 @@ class Data extends MY_Controller {
         $this->load->model('vendor_model');
         $this->load->model('data_gpon_model');
         $this->load->model('logbook_model');
+        //model buatan manual
+        $this->load->model('Chart_model');
+
         $this->load->helper('datatable');
         $this->load->library('datatables');
     }
@@ -191,6 +194,7 @@ class Data extends MY_Controller {
 
     public function chart(){
 
+        $this->Chart_model->fetch_data();
         //tes dari php ke javascrip
 //        $from_tgl   = $this->input->post('from_tgl');
 //        $to_tgl     = $this->input->post('to_tgl');
@@ -219,6 +223,8 @@ class Data extends MY_Controller {
     }
 
     public function ambildatachart(){
+
+
         //tes dari php ke javascrip
         $from_tgl   = $this->input->post('from_tgl');
         $to_tgl     = $this->input->post('to_tgl');
