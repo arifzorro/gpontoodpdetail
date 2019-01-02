@@ -65,9 +65,14 @@
 //            dataType:"json",
             url:"ambildatachart",
             success:function (result) {
+               console.log(result);
               //  console.log(data["tanggal"]);
                 //gitvar data=JSON.parse(data["data"]);
                 //var hasilDB=JSON.parse(result);
+
+
+
+
 
             }
         });

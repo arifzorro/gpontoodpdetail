@@ -194,7 +194,7 @@ class Data extends MY_Controller {
 
     public function chart(){
 
-       $this->data=$this->Chart_model->fetch_data();
+       //$this->data=$this->Chart_model->fetch_data();
 //       var_dump($this->data);
 //       echo $this->data->tanggal;
 
@@ -239,8 +239,10 @@ class Data extends MY_Controller {
             'to_tgl' => !empty_or_null($to_tgl) ? set_date($to_tgl) : (!empty_or_null($from_tgl) ? set_date($from_tgl) : null),
         );
         //mengambil data
-        $this->data=$this->logbook_model->get_all_dt($filter);
-        echo json_encode($this->data);
+        //$this->data=$this->logbook_model->get_all_dt($filter);//jgn pake fungsi yang ini keluarannya g' seperti array tapi object
+        $this->data['data']=$this->logbook_model->get();
+        //echo json_encode($this->data['data']->tanggal);
+        echo json_encode($this->data['data']);
 
     }
 
