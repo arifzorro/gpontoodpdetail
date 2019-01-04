@@ -38,12 +38,20 @@ Class Chart_model extends CI_Model{
     }
 
     public function fetch_data(){
-        $query=$this->db->query("select * from ".$this->table);
+        $query=$this->db->query("select * from ".$this->table." order_by ('tanggal','asc')");
+//        dd(query);
         $data=array();
         $recodrs=$query->result();
         $data['records']=$query->result_array();
         //dd($recodrs);
        //dd($data['records']);
         return  $data['records'];
+
+
+        //contoh query
+//        $this->db->from($this->table_name);
+//        $this->db->order_by("name", "asc");
+//        $query = $this->db->get();
+//        return $query->result();
     }
 }

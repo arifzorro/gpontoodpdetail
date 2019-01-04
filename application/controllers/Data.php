@@ -242,7 +242,7 @@ class Data extends MY_Controller {
         //$this->data=$this->logbook_model->get_all_dt($filter);//jgn pake fungsi yang ini keluarannya g' seperti array tapi object
 //        $this->data['data']=$this->logbook_model->get_all()->order_by("tanggal", 'ASC');  //error
 //        $this->data['data']=$this->logbook_model->get_all()->order_by("tanggal", 'ASC');
-        $this->data['data']=$this->logbook_model->get_all();
+        //$this->data['data']=$this->logbook_model->get_all();
 //        return $this->db->where('username', $username)
 //                ->group_by("id")
 //                ->order_by("id", "ASC")
@@ -250,6 +250,10 @@ class Data extends MY_Controller {
 //                ->count_all_results($this->tables['users']) > 0;
 
         //echo json_encode($this->data['data']->tanggal);
+
+        //menggunakan chartmodel
+        $this->data['data']=$this->Chart_model->fetch_data();
+
         echo json_encode($this->data['data']);
 
     }
