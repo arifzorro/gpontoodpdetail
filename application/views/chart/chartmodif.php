@@ -13,9 +13,9 @@
         </div>
     </form>
 
-<div class="demo-container" style="height:280px">
+<div class="demo-container" style="height:300px">
     <div id="chart_plot_02" class="demo-placeholder" style="padding: 0px; position: relative;">
-        <canvas id="myChart" width="1170" height="280" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1170px; height: 280px;">
+        <canvas id="myChart" width="1170" height="500" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1170px; height: 280px;">
         </canvas>
 
         <canvas class="flot-overlay" width="1170" height="280" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1170px; height: 280px;"></canvas>
@@ -62,15 +62,81 @@
         $.ajax({
             type: "GET",
             data:"",
-//            dataType:"json",
+            dataType:"json",  //ini sangat perlu untuk mendefinisikan tipe datanya JSON yang diterima
             url:"ambildatachart",
             success:function (result) {
-               console.log(result);
+               console.log(result.tanggal);
+                console.log(result);
+
               //  console.log(data["tanggal"]);
                 //gitvar data=JSON.parse(data["data"]);
                 //var hasilDB=JSON.parse(result);
 
+                let myChart = document.getElementById('myChart').getContext('2d');
 
+                // Global Options
+                Chart.defaults.global.defaultFontFamily = 'Lato';
+                Chart.defaults.global.defaultFontSize = 18;
+                Chart.defaults.global.defaultFontColor = '#777';
+
+
+
+                let massPopChart = new Chart(myChart, {
+                    type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+                    data:{
+                        labels:[result[0]['tanggal'], result[1]['tanggal'], 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+                        datasets:[{
+                            label:'Population',
+                            data:[
+                                617594,
+                                181045,
+                                153060,
+                                106519,
+                                105162,
+                                95072
+                            ],
+                            //backgroundColor:'green',
+                            backgroundColor:[
+                                'rgba(255, 99, 132, 0.6)',
+                                'rgba(54, 162, 235, 0.6)',
+                                'rgba(255, 206, 86, 0.6)',
+                                'rgba(75, 192, 192, 0.6)',
+                                'rgba(153, 102, 255, 0.6)',
+                                'rgba(255, 159, 64, 0.6)',
+                                'rgba(255, 99, 132, 0.6)'
+                            ],
+                            borderWidth:1,
+                            borderColor:'#777',
+                            hoverBorderWidth:3,
+                            hoverBorderColor:'#000'
+                        }]
+                    },
+                    options:{
+                        title:{
+                            display:true,
+                            text:'Largest Cities In Massachusetts',
+                            fontSize:22
+                        },
+                        legend:{
+                            display:true,
+                            position:'right',
+                            labels:{
+                                fontColor:'#000'
+                            }
+                        },
+                        layout:{
+                            padding:{
+                                left:50,
+                                right:0,
+                                bottom:0,
+                                top:0
+                            }
+                        },
+                        tooltips:{
+                            enabled:true
+                        }
+                    }
+                });
 
 
 
@@ -80,69 +146,5 @@
 
 
 
-//    let myChart = document.getElementById('myChart').getContext('2d');
-//
-//    // Global Options
-//    Chart.defaults.global.defaultFontFamily = 'Lato';
-//    Chart.defaults.global.defaultFontSize = 18;
-//    Chart.defaults.global.defaultFontColor = '#777';
-//
-//
-//
-//    let massPopChart = new Chart(myChart, {
-//        type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
-//        data:{
-//            labels:['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
-//            datasets:[{
-//                label:'Population',
-//                data:[
-//                    617594,
-//                    181045,
-//                    153060,
-//                    106519,
-//                    105162,
-//                    95072
-//                ],
-//                //backgroundColor:'green',
-//                backgroundColor:[
-//                    'rgba(255, 99, 132, 0.6)',
-//                    'rgba(54, 162, 235, 0.6)',
-//                    'rgba(255, 206, 86, 0.6)',
-//                    'rgba(75, 192, 192, 0.6)',
-//                    'rgba(153, 102, 255, 0.6)',
-//                    'rgba(255, 159, 64, 0.6)',
-//                    'rgba(255, 99, 132, 0.6)'
-//                ],
-//                borderWidth:1,
-//                borderColor:'#777',
-//                hoverBorderWidth:3,
-//                hoverBorderColor:'#000'
-//            }]
-//        },
-//        options:{
-//            title:{
-//                display:true,
-//                text:'Largest Cities In Massachusetts',
-//                fontSize:25
-//            },
-//            legend:{
-//                display:true,
-//                position:'right',
-//                labels:{
-//                    fontColor:'#000'
-//                }
-//            },
-//            layout:{
-//                padding:{
-//                    left:50,
-//                    right:0,
-//                    bottom:0,
-//                    top:0
-//                }
-//            },
-//            tooltips:{
-//                enabled:true
-//            }
-//        }
-//    });
+
 </script>
