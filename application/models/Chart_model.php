@@ -38,14 +38,23 @@ Class Chart_model extends CI_Model{
     }
 
     public function fetch_data(){
-        $query=$this->db->query("select * from ".$this->table." order_by ('tanggal','asc')");
+       // $query=$this->db->query("select * from ".$this->table." order_by ('tanggal','asc')");//kenapa ini salah fungsi order by dari CI g' bisa
+       // $query=$this->db->query("select * from ".$this->table." order by tanggal DESC");  //ini bener
+        //SELECT tanggal,COUNT(*) AS jumlah_harian FROM logbook GROUP BY tanggal
+
+        $query=$this->db->query("select tanggal,COUNT(*) AS jumlah_kunjungan from ".$this->table." GROUP BY tanggal LIMIT 7");
 //        dd(query);
-        $data=array();
-        $recodrs=$query->result();
-        $data['records']=$query->result_array();
-        //dd($recodrs);
-       //dd($data['records']);
-        return  $data['records'];
+  //      $data=array();
+
+//       $data[]=$query->result_array();
+//       return $data;
+
+//       $data['records']=$query->result_array();
+//       return  $data['records'];
+
+        $records=$query->result();
+        return $records;
+
 
 
         //contoh query

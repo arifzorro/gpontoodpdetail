@@ -252,9 +252,16 @@ class Data extends MY_Controller {
         //echo json_encode($this->data['data']->tanggal);
 
         //menggunakan chartmodel
-        $this->data['data']=$this->Chart_model->fetch_data();
+//        $this->data['data']=$this->Chart_model->fetch_data();
+//        echo json_encode($this->data['data']);
 
-        echo json_encode($this->data['data']);
+//        $this->data=$this->Chart_model->fetch_data();
+//        echo json_encode($this->data);
+
+            $save=$this->Chart_model->fetch_data();
+            echo json_encode($save);
+
+
 
     }
 

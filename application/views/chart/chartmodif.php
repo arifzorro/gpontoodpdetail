@@ -65,12 +65,32 @@
             dataType:"json",  //ini sangat perlu untuk mendefinisikan tipe datanya JSON yang diterima
             url:"ambildatachart",
             success:function (result) {
-               console.log(result.tanggal);
-                console.log(result);
+                //console.log(result.length);
 
               //  console.log(data["tanggal"]);
                 //gitvar data=JSON.parse(data["data"]);
                 //var hasilDB=JSON.parse(result);
+                var save=[];
+//                if(result.length == 7){
+//                     save=result;
+//                }
+//                else if(result.length == 0){
+//                    for(i=0 ;i < 7;i++){
+//                        save[i]="kosong";
+//                    }
+//                }
+//                 var temp=[];
+                for(i=0 ;i < 7;i++){
+                    //console.log(result[i]);
+                    if(result[i] == undefined){
+                       save[i]={tanggal: "kosong"}; //mengisi arraay save ke x dengan penanda tanggal kosong
+                    }
+                    else{
+                        save[i]=result[i];
+                    }
+                }
+                console.log(save);
+
 
                 let myChart = document.getElementById('myChart').getContext('2d');
 
@@ -84,13 +104,14 @@
                 let massPopChart = new Chart(myChart, {
                     type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
                     data:{
-                        labels:[result[0]['tanggal'], result[1]['tanggal'], 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+                        //labels:[result[0]['tanggal'], result[1]['tanggal'], result[2]['tanggal'], result[3]['tanggal'],result[4]['tanggal'], result[5]['tanggal']],
+                        labels:[save[0]['tanggal'],save[1]['tanggal'], save[2]['tanggal']],
                         datasets:[{
                             label:'Population',
                             data:[
                                 617594,
                                 181045,
-                                153060,
+                                1253060,
                                 106519,
                                 105162,
                                 95072
