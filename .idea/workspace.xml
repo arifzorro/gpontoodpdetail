@@ -4,11 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/application/views/chart/chartmodif.php" line="60" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96d19341-8441-4a7e-8c32-0c2037a2748b" name="Default" comment="">
+    <list default="true" id="96d19341-8441-4a7e-8c32-0c2037a2748b" name="Default" comment="tes ajax json ke chart passing data">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Data.php" afterPath="$PROJECT_DIR$/application/controllers/Data.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Chart_model.php" afterPath="$PROJECT_DIR$/application/models/Chart_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/chart/chartmodif.php" afterPath="$PROJECT_DIR$/application/views/chart/chartmodif.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/chart/chartgraph.php" afterPath="$PROJECT_DIR$/application/views/chart/chartgraph.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,20 +34,53 @@
       <file leaf-file-name="Data.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="235" column="48" lean-forward="false" selection-start-line="235" selection-start-column="48" selection-end-line="235" selection-end-column="48" />
+            <state relative-caret-position="258">
+              <caret line="220" column="42" lean-forward="true" selection-start-line="220" selection-start-column="42" selection-end-line="220" selection-end-column="42" />
               <folding>
-                <marker date="1546776740000" expanded="true" signature="142:360" ph="..." />
+                <marker date="1546785087000" expanded="true" signature="142:360" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chartmodif.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/chartjs/custom.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="0" column="4136" lean-forward="false" selection-start-line="0" selection-start-column="4136" selection-end-line="0" selection-end-column="4136" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="costumnotminify.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/chartjs/costumnotminify.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="200" column="50" lean-forward="true" selection-start-line="200" selection-start-column="50" selection-end-line="200" selection-end-column="50" />
+              <folding>
+                <marker date="1546785476000" expanded="true" signature="25934:25941" ph="×" />
+                <marker date="1546785476000" expanded="true" signature="47096:47108" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chartmodif.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/chart/chartmodif.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="110" column="34" lean-forward="true" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+            <state relative-caret-position="162">
+              <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chartgraph.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/chart/chartgraph.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="172" column="65" lean-forward="true" selection-start-line="172" selection-start-column="65" selection-end-line="172" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -100,36 +132,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Role_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/Role_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="charttes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/chart/charttes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ion_auth_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/third_party/ion_auth/models/Ion_auth_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10755">
-              <caret line="717" column="5" lean-forward="false" selection-start-line="712" selection-start-column="8" selection-end-line="717" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MY_Controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -152,12 +154,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>flot-tick-label</find>
       <find>canvas</find>
       <find>flot-tick-label tickLabel</find>
       <find>flot-x-axis</find>
-      <find>flot-base</find>
-      <find>chart_plot_02</find>
       <find>$</find>
       <find>$.ajax</find>
       <find>datepicker from_tgl form-control input-sm</find>
@@ -182,6 +181,9 @@
       <find>15000</find>
       <find>150000</find>
       <find>1500000</find>
+      <find>chart_plot_02</find>
+      <find>flot-overlay</find>
+      <find>flot-base</find>
     </findStrings>
     <replaceStrings>
       <replace>data_gpon_model</replace>
@@ -201,7 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/views/login.php" />
         <option value="$PROJECT_DIR$/application/models/Banksoal_model.php" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/application/models/Data_model.php" />
@@ -244,14 +245,15 @@
         <option value="$PROJECT_DIR$/application/views/data/index.php" />
         <option value="$PROJECT_DIR$/application/views/data/formgpon.php" />
         <option value="$PROJECT_DIR$/public/js/chartjs/chart.js" />
-        <option value="$PROJECT_DIR$/application/views/chart/chartgraph.php" />
         <option value="$PROJECT_DIR$/application/core/MY_Controller.php" />
         <option value="$PROJECT_DIR$/public/js/datamodif.js" />
         <option value="$PROJECT_DIR$/application/models/logbook_model.php" />
         <option value="$PROJECT_DIR$/application/views/chart/charttes.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Data.php" />
         <option value="$PROJECT_DIR$/application/models/Chart_model.php" />
         <option value="$PROJECT_DIR$/application/views/chart/chartmodif.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Data.php" />
+        <option value="$PROJECT_DIR$/application/views/chart/chartgraph.php" />
+        <option value="$PROJECT_DIR$/public/js/chartjs/costumnotminify.js" />
       </list>
     </option>
   </component>
@@ -299,6 +301,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gpontoodpdetail" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpontoodpdetail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpontoodpdetail" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpontoodpdetail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpontoodpdetail" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpontoodpdetail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpontoodpdetail" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chartjs" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -596,7 +652,7 @@
       <workItem from="1545740307302" duration="84000" />
       <workItem from="1546390376138" duration="3600000" />
       <workItem from="1546565224002" duration="5674000" />
-      <workItem from="1546775595428" duration="4330000" />
+      <workItem from="1546775595428" duration="5102000" />
     </task>
     <task id="LOCAL-00001" summary="datatabel edit 1">
       <created>1543568703332</created>
@@ -717,11 +773,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546394464920</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="tes ajax json ke chart passing data">
+      <created>1546780577389</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1546780577389</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204822000" />
+    <option name="totallyTimeSpent" value="205594000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -741,7 +804,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32659408" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32659408" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1825525" sideWeight="0.49191687" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -803,7 +866,8 @@
     <MESSAGE value="nambah chart plugin" />
     <MESSAGE value="tes chart" />
     <MESSAGE value="tes ajax json ke chart" />
-    <option name="LAST_COMMIT_MESSAGE" value="tes ajax json ke chart" />
+    <MESSAGE value="tes ajax json ke chart passing data" />
+    <option name="LAST_COMMIT_MESSAGE" value="tes ajax json ke chart passing data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -812,13 +876,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/helpers/MY_url_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -945,13 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/chartjs/custom.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="8187" lean-forward="false" selection-start-line="2" selection-start-column="8187" selection-end-line="2" selection-end-column="8187" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/chartjs/date.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1043,16 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/chart/chartgraph.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2625">
-          <caret line="175" column="32" lean-forward="false" selection-start-line="175" selection-start-column="32" selection-end-line="175" selection-end-column="32" />
-          <folding>
-            <marker date="1545742353000" expanded="true" signature="11272:11278" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1169,16 +1209,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="235" column="48" lean-forward="false" selection-start-line="235" selection-start-column="48" selection-end-line="235" selection-end-column="48" />
-          <folding>
-            <marker date="1546776740000" expanded="true" signature="142:360" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Chart_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -1193,11 +1223,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="220" column="42" lean-forward="true" selection-start-line="220" selection-start-column="42" selection-end-line="220" selection-end-column="42" />
+          <folding>
+            <marker date="1546785087000" expanded="true" signature="142:360" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/chartjs/custom.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="0" column="4136" lean-forward="false" selection-start-line="0" selection-start-column="4136" selection-end-line="0" selection-end-column="4136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/chart/chartmodif.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="110" column="34" lean-forward="true" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+        <state relative-caret-position="162">
+          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/chart/chartgraph.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="172" column="65" lean-forward="true" selection-start-line="172" selection-start-column="65" selection-end-line="172" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/chartjs/costumnotminify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="200" column="50" lean-forward="true" selection-start-line="200" selection-start-column="50" selection-end-line="200" selection-end-column="50" />
+          <folding>
+            <marker date="1546785476000" expanded="true" signature="25934:25941" ph="×" />
+            <marker date="1546785476000" expanded="true" signature="47096:47108" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
