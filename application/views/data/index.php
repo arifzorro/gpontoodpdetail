@@ -10,7 +10,7 @@
                 <div class="header-panel">
                     <form class="filter-table form-inline hidden-xs">
                         <div class="form-group">
-                            <label class="control-label">Tgl Input Soal</label>
+                            <label class="control-label">Tgl Input</label>
                             <input name="from_tgl" type="text" class="datepicker from_tgl form-control input-sm">
                         </div>
                         <div class="form-group">
