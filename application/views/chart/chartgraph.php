@@ -174,6 +174,6 @@
     <script src="<?php assets('js/chartjs/date.js') ?>"></script>
 <!--    <script src="--><?php //assets('js/chartjs/moment.js') ?><!--"></script>-->
     <script src="<?php assets('js/chartjs/costumnotminify.js') ?>"></script>
-
+<!--    <script src="--><?php //assets('js/chartjs/custom.min.js') ?><!--"></script>-->
 
 </js>

@@ -223,7 +223,7 @@ class Data extends MY_Controller {
 //        }
 
 
-        $this->render('chart/chartgraph');
+        $this->render('chart/chartmodifcoba');
        // $this->load->view('chart/chartmodif');
 
     }

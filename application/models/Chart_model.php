@@ -42,7 +42,7 @@ Class Chart_model extends CI_Model{
        // $query=$this->db->query("select * from ".$this->table." order by tanggal DESC");  //ini bener
         //SELECT tanggal,COUNT(*) AS jumlah_harian FROM logbook GROUP BY tanggal
 
-        $query=$this->db->query("select tanggal,COUNT(*) AS jumlah_kunjungan from ".$this->table." GROUP BY tanggal LIMIT 7");
+        $query=$this->db->query("select tanggal,COUNT(*) AS jumlah_kunjungan from ".$this->table." GROUP BY tanggal ORDER BY TANGGAL DESC LIMIT 7");
 //        dd(query);
   //      $data=array();
 
