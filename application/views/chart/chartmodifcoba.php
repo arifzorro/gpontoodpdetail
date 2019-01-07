@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <div class="tilesmodif" style="margin: 160px;">
+    <div class="tilesmodif" style="margin: 250px;">
         <div class="col-md-4 tile">
             <span>Total Sessions</span>
             <h2>231,809</h2>
@@ -65,8 +65,18 @@
             dataType:"json",  //ini sangat perlu untuk mendefinisikan tipe datanya JSON yang diterima
             url:"ambildatachart",
             success:function (result) {
-                //console.log(result.length);
+                console.log(result);
+                //coba untuk sorting
+//                result.sort(function(a,b){
+//                    var c = new Date(a.date);
+//                    var d = new Date(b.date);
+//                    var temp=c-d;
+//                   // console.log(temp)
+//                    return temp;
+//                });
 
+
+                //console.log(result.length);
                 //  console.log(data["tanggal"]);
                 //gitvar data=JSON.parse(data["data"]);
                 //var hasilDB=JSON.parse(result);
