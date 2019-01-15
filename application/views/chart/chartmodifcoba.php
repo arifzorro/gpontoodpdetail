@@ -54,6 +54,7 @@
 
 </div>
 <script src="<?php assets('js/chartjs/chart.js') ?>"></script>
+<script src="<?php assets('js/chartjs/chartbundle.js') ?>"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <script type="text/javascript">
@@ -103,12 +104,12 @@
                 console.log(save);
 
 
-                let myChart = document.getElementById('myChart').getContext('2d');
+//                let myChart = document.getElementById('myChart').getContext('2d');
 
                 // Global Options
-                Chart.defaults.global.defaultFontFamily = 'Lato';
-                Chart.defaults.global.defaultFontSize = 18;
-                Chart.defaults.global.defaultFontColor = '#777';
+//                Chart.defaults.global.defaultFontFamily = 'Lato';
+//                Chart.defaults.global.defaultFontSize = 18;
+//                Chart.defaults.global.defaultFontColor = '#777';
 
 
 
@@ -121,21 +122,21 @@
                             label:'Kunjungan ODC',
                             fill:false,
                             lineTension:0.1,
-                            backgroundColor:"rgba(75,192,192,0.4)",
+//                            backgroundColor:"rgba(75,192,192,0.4)",
                             borderColor:"rgba(75,192,192,1)",
-                            borderCapStyle:'butt',
-                            borderDash:[],
-                            borderDashOffset:0.0,
-                            borderJoinStyle:'miter',
-                            pointBorderColor:"rgba(75,192,192,1)",
-                            pointBackgroundColor:"#FFF",
-                            PointBorderWidth:1,
-                            pointHoverRadius:5,
-                            pointHoverBackgroundColor:"rgba(75,192,192,1)",
-                            pointHoverBorderColor:"rgba(220,220,220,1)",
-                            PointHoverBorderWidth:2,
-                            pointRadius:1,
-                            pointHitRadius:10,
+//                            borderCapStyle:'butt',
+//                            borderDash:[],
+//                            borderDashOffset:0.0,
+//                            borderJoinStyle:'miter',
+//                            pointBorderColor:"rgba(75,192,192,1)",
+//                            pointBackgroundColor:"#FFF",
+//                            PointBorderWidth:1,
+//                            pointHoverRadius:5,
+//                            pointHoverBackgroundColor:"rgba(75,192,192,1)",
+//                            pointHoverBorderColor:"rgba(220,220,220,1)",
+//                            PointHoverBorderWidth:2,
+//                            pointRadius:1,
+//                            pointHitRadius:10,
 
 
                             data:[
@@ -160,29 +161,36 @@
                         }]
                     },
                     options:{
-                        title:{
-                            display:true,
-                            text:'KUNJUNGAN',
-                            fontSize:22
-                        },
-                        legend:{
-                            display:true,
-                            position:'right',
-                            labels:{
-                                fontColor:'#000'
-                            }
-                        },
-                        layout:{
-                            padding:{
-                                left:50,
-                                right:0,
-                                bottom:0,
-                                top:0
-                            }
-                        },
+//                        responsive:true,
+//                        title:{
+//                            display:true,
+//                            text:'KUNJUNGAN',
+//                            fontSize:22
+//                        },
+//                        legend:{
+//                            display:true,
+//                            position:'right',
+//                            labels:{
+//                                fontColor:'#000'
+//                            }
+//                        },
+//                        layout:{
+//                            padding:{
+//                                left:50,
+//                                right:0,
+//                                bottom:0,
+//                                top:0
+//                            }
+//                        },
                         tooltips:{
-                            enabled:true
+                            enabled:true,
+                            mode: 'index',
+                            intersect: false,
                         }
+//                        hover: {
+//                            mode: 'nearest',
+//                            intersect: true
+//                        }
                     }
                 });
 
@@ -191,7 +199,6 @@
             }
         });
     });
-
 
 
 
