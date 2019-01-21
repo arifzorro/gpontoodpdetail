@@ -13,12 +13,12 @@
         </div>
     </form>
 
-    <div class="demo-container" style="height:300px">
+<!--    <div class="demo-container" style="height:300px">-->
         <div id="chart_plot_02" class="demo-placeholder" style="padding: 0px; position: relative;">
-            <canvas id="myChart" width="1170" height="500" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1170px; height: 280px;">
-            </canvas>
+<!--            <canvas id="myChart" width="1170" height="500" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1170px; height: 280px;">-->
+<!--            </canvas>-->
 
-            <canvas class="flot-overlay" width="1170" height="280" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1170px; height: 280px;"></canvas>
+<!--            <canvas class="flot-overlay" width="1170" height="280" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1170px; height: 280px;"></canvas>-->
             <div class="legend"><div style="position: absolute; width: 71px; height: 15px; top: -17px; right: 21px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div>
                 <table style="position:absolute;top:-17px;right:21px;;font-size:smaller;color:#3f3f3f">
                     <tbody>
@@ -33,7 +33,7 @@
                 </table>
             </div>
         </div>
-    </div>
+<!--    </div>-->
     <div class="tilesmodif" style="margin: 250px;">
         <div class="col-md-4 tile">
             <span>Total Sessions</span>
@@ -57,6 +57,7 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="<?php assets('js/chartjs/cobapositiontolltip.js') ?>"></script>
+
 <script src="<?php assets('js/chartjs/chart.js') ?>"></script>
 <script src="<?php assets('js/chartjs/chartbundle.js') ?>"></script>
+<script src="<?php assets('js/chartjs/cobapositiontolltip.js') ?>"></script>

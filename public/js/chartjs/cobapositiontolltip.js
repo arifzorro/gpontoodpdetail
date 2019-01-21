@@ -11,9 +11,9 @@
         success: function (result) {
             //console.log(result);
 
-            var container = document.querySelector('#myChart');
-
-            ['average', 'nearest'].forEach(function (position) {
+            //var container = document.querySelector('#myChart');
+            var container= document.getElementById("chart_plot_02");
+             // ['average', 'nearest'].forEach(function (position) {
                 var div = document.createElement('div');
                 div.classList.add('chart-container');
 
@@ -22,10 +22,11 @@
                 container.appendChild(div);
 
                 var ctx = canvas.getContext('2d');
-                var config = createConfig(position);
+                // var config = createConfig(position);
+                var config = createConfig('nearest');
                 console.log(config);
                 new Chart(ctx, config);
-            });
+             // });
 
             function createConfig(position) {
                 var save = [];
