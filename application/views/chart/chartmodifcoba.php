@@ -48,7 +48,7 @@
         <div class="col-md-4 tile">
             <span>Total Sessions</span>
             <h2>231,809</h2>
-            <span class="sparkline11 graph" style="height: 160px;"><canvas width="198" height="40" style="display: inline-block; width: 198px; height: 40px; vertical-align: top;"></canvas></span>
+            <span class="sparkline11 graph" style="height: 160px;"><canvas width="198" height="40" style="display: inline-block; width: 198px; height: 40px; vertical-align: top;"></canvas></span>F
         </div>
     </div>
 

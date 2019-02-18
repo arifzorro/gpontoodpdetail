@@ -265,4 +265,8 @@ class Data extends MY_Controller {
 
     }
 
+    public function upload_exel_logodc(){
+        $this->render('upload exel');
+    }
+
     }
