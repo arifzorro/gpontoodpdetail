@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96d19341-8441-4a7e-8c32-0c2037a2748b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/upload exel/upload_exel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/uploadexel/uploadexel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Data.php" afterPath="$PROJECT_DIR$/application/controllers/Data.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/chart/chartmodifcoba.php" afterPath="$PROJECT_DIR$/application/views/chart/chartmodifcoba.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/data/listlog.php" afterPath="$PROJECT_DIR$/application/views/data/listlog.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -602,7 +597,7 @@
       <workItem from="1547024014887" duration="817000" />
       <workItem from="1547517323937" duration="297000" />
       <workItem from="1548034957863" duration="7293000" />
-      <workItem from="1550472634605" duration="6140000" />
+      <workItem from="1550472634605" duration="6206000" />
     </task>
     <task id="LOCAL-00001" summary="datatabel edit 1">
       <created>1543568703332</created>
@@ -751,11 +746,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550460615109</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="buat import data exel">
+      <created>1550479772080</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1550479772080</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229276000" />
+    <option name="totallyTimeSpent" value="229342000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -838,7 +840,8 @@
     <MESSAGE value="buat graph sorting" />
     <MESSAGE value="buat graph position tooltip" />
     <MESSAGE value="buat graph position tooltip coba rubah" />
-    <option name="LAST_COMMIT_MESSAGE" value="buat graph position tooltip coba rubah" />
+    <MESSAGE value="buat import data exel" />
+    <option name="LAST_COMMIT_MESSAGE" value="buat import data exel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
