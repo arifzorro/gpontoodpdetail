@@ -14,11 +14,13 @@
     //     })
     // }
 
+
+
      $('#import_form').on('submit', function(event){
-         alert(1);
+         //alert(1);
          event.preventDefault();
          $.ajax({
-             url:"<?php echo base_url(); ?>excel_import/import",
+             url:"import_excel",
              method:"POST",
              data:new FormData(this),
              contentType:false,
@@ -30,6 +32,14 @@
                  alert(data);
              }
          })
+     });
+
+     // $("#import_form").submit(function(){
+     //     alert("Submitted");
+     // });
+
+     $(".tes").submit(function(){
+         alert("Submitted");
      });
     });
 //

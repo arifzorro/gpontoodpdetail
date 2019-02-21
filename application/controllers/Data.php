@@ -1,9 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Data extends MY_Controller {
+class Data extends MY_Controller
+{
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
         $this->load->model('data_model');
         $this->load->model('vendor_model');
@@ -11,22 +13,28 @@ class Data extends MY_Controller {
         $this->load->model('logbook_model');
         //model buatan manual
         $this->load->model('Chart_model');
+        $this->load->model('excel_import_model');
 
         $this->load->helper('datatable');
         $this->load->library('datatables');
+        //library excel
+        $this->load->library('ExcelLibrary/excel');
+
     }
 
-    public function not_allowed() {
+    public function not_allowed()
+    {
         $this->load->view('not_allowed');
     }
 
-    public function index() {
+    public function index()
+    {
 
         if ($this->input->is_ajax_request()) {
 
-            $from_tgl   = $this->input->post('from_tgl');
-            $to_tgl     = $this->input->post('to_tgl');
-            $filter = (object) array(
+            $from_tgl = $this->input->post('from_tgl');
+            $to_tgl = $this->input->post('to_tgl');
+            $filter = (object)array(
                 'from_tgl' => !empty_or_null($from_tgl) ? set_date($from_tgl) : null,
                 'to_tgl' => !empty_or_null($to_tgl) ? set_date($to_tgl) : (!empty_or_null($from_tgl) ? set_date($from_tgl) : null),
             );
@@ -37,13 +45,14 @@ class Data extends MY_Controller {
         }
     }
 
-    public function listlog() {
+    public function listlog()
+    {
 
         if ($this->input->is_ajax_request()) {
 
-            $from_tgl   = $this->input->post('from_tgl');
-            $to_tgl     = $this->input->post('to_tgl');
-            $filter = (object) array(
+            $from_tgl = $this->input->post('from_tgl');
+            $to_tgl = $this->input->post('to_tgl');
+            $filter = (object)array(
                 'from_tgl' => !empty_or_null($from_tgl) ? set_date($from_tgl) : null,
                 'to_tgl' => !empty_or_null($to_tgl) ? set_date($to_tgl) : (!empty_or_null($from_tgl) ? set_date($from_tgl) : null),
             );
@@ -54,7 +63,8 @@ class Data extends MY_Controller {
         }
     }
 
-    public function create() {
+    public function create()
+    {
 
         $this->data['vendor'] = $this->vendor_model->get(1);
         //var_dump($this->vendor_model->get(1));
@@ -67,8 +77,9 @@ class Data extends MY_Controller {
 //       $this->render('data/formsoal');
 //    }
 
-    public function inputdatagpon(){
-       // echo time();
+    public function inputdatagpon()
+    {
+        // echo time();
         //$this->data['vendor'] = $this->vendor_model->get(1);
         //   dd($this->data['vendor']);
         //  var_dump($this->vendor_model->get(1));
@@ -84,19 +95,22 @@ class Data extends MY_Controller {
 
         $this->render('data/formgpon');
     }
-    public function  logbook(){
+
+    public function logbook()
+    {
         $this->render('data/formlogbook');
     }
 
-    public function edit($id) {
+    public function edit($id)
+    {
         //dd($id);
         //CODE RAMA
 //        $this->data['data'] = $this->data_model->with_vendor()->get($id);
 //        $this->data['vendor'] = $this->data['data']->vendor;
 //        $this->render('data/formsoal');
-       //var_dump($id);
+        //var_dump($id);
         //maksudnya
-       $this->data['data'] = $this->data_gpon_model->get($id);
+        $this->data['data'] = $this->data_gpon_model->get($id);
         var_dump($this->data['data']);
         //$this->data['vendor'] = $this->data['data']->vendor;
         //var_dump($this->data['vendor']);
@@ -104,7 +118,8 @@ class Data extends MY_Controller {
     }
 
 
-    public function editlog($id) {
+    public function editlog($id)
+    {
         //dd($id);
         //CODE RAMA
 //        $this->data['data'] = $this->data_model->with_vendor()->get($id);
@@ -119,7 +134,8 @@ class Data extends MY_Controller {
         $this->render('data/formlogbook');
     }
 
-    public function _fetch_data($is_add_state) {
+    public function _fetch_data($is_add_state)
+    {
         $data = $this->input->post();
 
         $data['tanggal'] = set_date($data['tanggal']);
@@ -130,13 +146,14 @@ class Data extends MY_Controller {
     }
 
 
-    public function save($id = null) {
+    public function save($id = null)
+    {
         $is_add_state = is_null($id);
         $data = $this->_fetch_data($is_add_state);
-       // dd($data);
+        // dd($data);
         //$kategori=$_POST['']
-       // dd($data);
-       //   dd($id);
+        // dd($data);
+        //   dd($id);
         //dd($is_add_state);
         if ($is_add_state) {
 
@@ -145,14 +162,15 @@ class Data extends MY_Controller {
             $is_success = $this->data_gpon_model->update($data, $id);
         }
         //var_dump('akses');
-        if ($is_success) set_flash_message( "Data telah tersimpan.");
+        if ($is_success) set_flash_message("Data telah tersimpan.");
         else set_flash_message("Data gagal tersimpan.", 'error');
 
         if ($is_add_state) redirect(base_url('data/inputdatagpon'));
         else redirect(base_url('data'));
     }
 
-    public function delete($id) {
+    public function delete($id)
+    {
         $success = $this->data_gpon_model->delete(array('id' => $id));
         if ($success === FALSE) {
             return NULL;
@@ -160,7 +178,9 @@ class Data extends MY_Controller {
             echo "Data berhasil dihapus.";
         }
     }
-    public function deletelog($id) {
+
+    public function deletelog($id)
+    {
         $success = $this->logbook_model->delete(array('id' => $id));
         if ($success === FALSE) {
             return NULL;
@@ -170,7 +190,8 @@ class Data extends MY_Controller {
     }
 
 
-    public function savelog($id = null) {
+    public function savelog($id = null)
+    {
         $is_add_state = is_null($id);
         $data = $this->_fetch_data($is_add_state);
         // dd($data);
@@ -185,16 +206,17 @@ class Data extends MY_Controller {
             $is_success = $this->logbook_model->update($data, $id);
         }
         //var_dump('akses');
-        if ($is_success) set_flash_message( "Data telah tersimpan.");
+        if ($is_success) set_flash_message("Data telah tersimpan.");
         else set_flash_message("Data gagal tersimpan.", 'error');
 
         if ($is_add_state) redirect(base_url('data/logbook'));
         else redirect(base_url('data/listlog'));
     }
 
-    public function chart(){
+    public function chart()
+    {
 
-       //$this->data=$this->Chart_model->fetch_data();
+        //$this->data=$this->Chart_model->fetch_data();
 //       var_dump($this->data);
 //       echo $this->data->tanggal;
 
@@ -213,10 +235,10 @@ class Data extends MY_Controller {
 
 
         //cara melihat isi objek di json
-      //  $json_object=json_decode($this->data);
-      //  var_dump($json_object->data);
+        //  $json_object=json_decode($this->data);
+        //  var_dump($json_object->data);
 
-      //  print_r($this->logbook_model->get_all_dt($filter));
+        //  print_r($this->logbook_model->get_all_dt($filter));
 
 //        foreach ($this->data as $kotak){
 //            echo $kotak[1];
@@ -224,17 +246,18 @@ class Data extends MY_Controller {
 
 
         $this->render('chart/chartmodifcoba');
-       // $this->load->view('chart/chartmodif');
+        // $this->load->view('chart/chartmodif');
 
     }
 
-    public function ambildatachart(){
+    public function ambildatachart()
+    {
 
 
         //tes dari php ke javascrip
-        $from_tgl   = $this->input->post('from_tgl');
-        $to_tgl     = $this->input->post('to_tgl');
-        $filter = (object) array(
+        $from_tgl = $this->input->post('from_tgl');
+        $to_tgl = $this->input->post('to_tgl');
+        $filter = (object)array(
             'from_tgl' => !empty_or_null($from_tgl) ? set_date($from_tgl) : null,
             'to_tgl' => !empty_or_null($to_tgl) ? set_date($to_tgl) : (!empty_or_null($from_tgl) ? set_date($from_tgl) : null),
         );
@@ -258,15 +281,51 @@ class Data extends MY_Controller {
 //        $this->data=$this->Chart_model->fetch_data();
 //        echo json_encode($this->data);
 
-            $save=$this->Chart_model->fetch_data();
-            echo json_encode($save);
-
+        $save = $this->Chart_model->fetch_data();
+        echo json_encode($save);
 
 
     }
 
-    public function upload_exel_logodc(){
-        $this->render('upload exel');
-    }
+    public function import_excel()
+    {
+        if (isset($_FILES["file"]["name"])) {
+            $path = $_FILES["file"]["tmp_name"];
+            $object = PHPExcel_IOFactory::load($path);
+            foreach ($object->getWorksheetIterator() as $worksheet) {
+                $highestRow = $worksheet->getHighestRow();
+                $highestColumn = $worksheet->getHighestColumn();
+                for ($row = 2; $row <= $highestRow; $row++) {
+//                    $no = $worksheet->getCellByColumnAndRow(0, $row)->getValue();
+                    $tanggal = $worksheet->getCellByColumnAndRow(1, $row)->getValue();
+//                    echo json_encode("ini adalah= ".$tanggal);
+                    //echo json_encode("".$tanggal);
+
+                    $sto = $worksheet->getCellByColumnAndRow(2, $row)->getValue();
+                    $odc = $worksheet->getCellByColumnAndRow(3, $row)->getValue();
+                    $uraian = $worksheet->getCellByColumnAndRow(4, $row)->getValue();
+                    $pelaksana = $worksheet->getCellByColumnAndRow(5, $row)->getValue();
+                    $data[] = array(
+//                        'no' => $no,
+                        'Tanggal' => $tanggal,
+                        'STO' => $sto,
+                        'ODC' => $odc,
+                        'Uraian' => $uraian,
+                        'Pelaksana' => $pelaksana
+                    );
+                }
+            }
+            $this->excel_import_model->insert($data);
+            echo 'Data Imported successfully';
+//            foreach($data as $row)
+//            {
+//            echo json_encode( $row["Tanggal"] );
+//
+//            }
+
+            //var_dump($data);
+            //echo json_encode($data);
+        }
 
     }
+}

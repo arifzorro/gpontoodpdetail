@@ -22,9 +22,11 @@
                         </div>
                     </form>
                     <a href="<?php route('data/logbook'); ?>" class="btn btn-success btn-sm pull-right" style="margin-bottom: 0px"><i class="fa fa-plus-circle"></i> Input Baru</a>
-                   <input type="file" name="file" id="file" required accept=".xls, .xlsx" />
                     <form method="post" id="import_form" enctype="multipart/form-data">
-                    <a href="#" class="btn btn-warning btn-sm pull-right uploadexel" style="margin-bottom: 0px;"><i class="fa fa-plus-circle"></i> Upload exel</a>
+<!--                            <p><label>Select Excel File</label>-->
+                                <input type="file" name="file" id="file" required accept=".xls, .xlsx" />
+                            <input type="submit" name="import" value="Import" class="btn btn-warning btn-sm pull-right" />
+<!--                        <a href="#" class="btn btn-warning btn-sm pull-right tes" type="submit" style="margin-bottom: 0px;"><i class="fa fa-plus-circle"></i> Upload exel</a>-->
                     </form>
                 </div>
                 <div class="clearfix"></div>
