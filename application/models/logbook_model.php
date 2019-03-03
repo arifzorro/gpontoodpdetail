@@ -27,7 +27,7 @@ class logbook_model extends MY_Model {
             d.id, d.tanggal, d.uraian, d.pelaksana,d.sto,d.odc,d.created_at
         ")
             ->from("$this->table d")
-            ->edit_column('tanggal', '$1', "show_date(tanggal)")
+            ->edit_column('created_at', '$1', "show_date_change_format(created_at)")  //ini untuk edit created at
             ->add_column('action', '$1', "set_actionslog(id, data)");//langsung pake nama field di database dengan id_soal
 
         if (!is_null($filter->from_tgl)) {

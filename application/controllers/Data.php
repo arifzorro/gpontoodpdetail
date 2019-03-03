@@ -56,7 +56,8 @@ class Data extends MY_Controller
                 'from_tgl' => !empty_or_null($from_tgl) ? set_date($from_tgl) : null,
                 'to_tgl' => !empty_or_null($to_tgl) ? set_date($to_tgl) : (!empty_or_null($from_tgl) ? set_date($from_tgl) : null),
             );
-            //var_dump($this->data_gpon_model->get_all_dt($filter));
+            json_encode($this->data_gpon_model->get_all_dt($filter));
+
             return print_r($this->logbook_model->get_all_dt($filter));
         } else {
             $this->render('data/listlog');
@@ -144,6 +145,16 @@ class Data extends MY_Controller
         //dd($data);
         return $data;
     }
+    public function _fetch_data_with_change_date_format($is_add_state)
+    {
+        $data = $this->input->post();
+
+        $data['tanggal'] = set_date_changeformat($data['tanggal']);
+        //dd($data['tanggal']);
+        $data = array_merge($data, user_timestamps($is_add_state));
+        //dd($data);
+        return $data;
+    }
 
 
     public function save($id = null)
@@ -193,8 +204,8 @@ class Data extends MY_Controller
     public function savelog($id = null)
     {
         $is_add_state = is_null($id);
-        $data = $this->_fetch_data($is_add_state);
-        // dd($data);
+        $data = $this->_fetch_data_with_change_date_format($is_add_state);
+         //dd($data);
         //$kategori=$_POST['']
         // dd($data);
         //   dd($id);
@@ -298,6 +309,7 @@ class Data extends MY_Controller
                 for ($row = 2; $row <= $highestRow; $row++) {
 //                    $no = $worksheet->getCellByColumnAndRow(0, $row)->getValue();
                     $tanggal = $worksheet->getCellByColumnAndRow(1, $row)->getValue();
+                    $convert_tanggal=set_date_changeformat_indo_to_us($tanggal);
 //                    echo json_encode("ini adalah= ".$tanggal);
                     //echo json_encode("".$tanggal);
 
@@ -307,7 +319,7 @@ class Data extends MY_Controller
                     $pelaksana = $worksheet->getCellByColumnAndRow(5, $row)->getValue();
                     $data[] = array(
 //                        'no' => $no,
-                        'Tanggal' => $tanggal,
+                        'Tanggal' => $convert_tanggal,
                         'STO' => $sto,
                         'ODC' => $odc,
                         'Uraian' => $uraian,

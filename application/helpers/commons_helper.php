@@ -161,9 +161,35 @@ function set_date($date) {
     return date_format($date, 'Y-m-d');
 }
 
+function set_date_changeformat($date) {
+    if (empty_or_null($date)) return '';
+    $date = DateTime::createFromFormat('d-m-Y', $date);
+    return date_format($date, 'Y-m-d');
+}
+function set_date_changeformat_with_time($date) {
+    if (empty_or_null($date)) return '';
+    $date = DateTime::createFromFormat('d-m-Y H:i:s', $date);
+    return date_format($date, 'Y-m-d H:i:s');
+}
+function set_date_changeformat_with_no_time($date) {
+    if (empty_or_null($date)) return '';
+    $date = DateTime::createFromFormat('d-m-Y H:i:s', $date);
+    return date_format($date, 'Y-m-d');
+}
+function set_date_changeformat_indo_to_us($date) {
+    if (empty_or_null($date)) return '';
+    $date = DateTime::createFromFormat('d-m-Y', $date);
+    return date_format($date, 'Y-m-d');
+}
+
 function show_date($date) {
     $date = DateTime::createFromFormat('Y-m-d', $date);
     return date_format($date, 'd-m-Y');
+}
+function show_date_change_format($date) {
+    $date = DateTime::createFromFormat('Y-m-d H:i:s', $date);
+    //json_encode($date);
+    return date_format($date, 'd-m-Y H:i:s');
 }
 
 function get_str_between($str, $start, $end) {

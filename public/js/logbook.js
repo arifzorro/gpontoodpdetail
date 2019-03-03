@@ -34,7 +34,7 @@ var table = $('#table_data').DataTable({
             }, searchable: false, orderable: false
         },
         {"data": "action", orderable: false, searchable: false},
-        {"data": "created_at"}, //urutan isi pada data tabel
+        {"data": "tanggal"}, //urutan isi pada data tabel
         {"data": "sto"},
         {"data": "odc"},
         {"data": "uraian"},
