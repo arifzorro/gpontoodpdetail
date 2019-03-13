@@ -39,6 +39,11 @@
 <!--                    <li><a href="form_buttons.html">Form Buttons</a></li>-->
                 </ul>
             </li>
+            <li>
+                <a href="<?php route('data/input_gpon'); ?>">
+                    <i class="fa fa-upload"></i> GPON
+                </a>
+            </li>
         </ul>
     </div>
 </div>

@@ -340,4 +340,8 @@ class Data extends MY_Controller
         }
 
     }
+    public function Input_Gpon()
+    {
+        $this->render('data/formg_data_gpon');
+    }
 }
