@@ -29,6 +29,7 @@ class Data extends MY_Controller
 
     public function index()
     {
+       //dd($this->uri->segment('1'));  //mengambil link berdasarkan slash
 
         if ($this->input->is_ajax_request()) {
 
@@ -112,7 +113,7 @@ class Data extends MY_Controller
         //var_dump($id);
         //maksudnya
         $this->data['data'] = $this->data_gpon_model->get($id);
-        var_dump($this->data['data']);
+       // var_dump($this->data['data']);
         //$this->data['vendor'] = $this->data['data']->vendor;
         //var_dump($this->data['vendor']);
         $this->render('data/formgpon');
@@ -300,6 +301,7 @@ class Data extends MY_Controller
 
     public function import_excel()
     {
+//        echo json_encode($this->uri->segment('1'));
         if (isset($_FILES["file"]["name"])) {
             $path = $_FILES["file"]["tmp_name"];
             $object = PHPExcel_IOFactory::load($path);

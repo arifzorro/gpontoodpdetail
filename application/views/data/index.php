@@ -22,6 +22,12 @@
                         </div>
                     </form>
                     <a href="<?php route('data/inputdatagpon'); ?>" class="btn btn-success btn-sm pull-right" style="margin-bottom: 0px"><i class="fa fa-plus-circle"></i> Input Baru</a>
+                    <form method="post" id="import_form" enctype="multipart/form-data">
+                        <!--                            <p><label>Select Excel File</label>-->
+                        <input type="file" name="file" id="file" required accept=".xls, .xlsx" />
+                        <input type="submit" name="import" value="Import" class="btn btn-warning btn-sm pull-right" />
+                        <!--                        <a href="#" class="btn btn-warning btn-sm pull-right tes" type="submit" style="margin-bottom: 0px;"><i class="fa fa-plus-circle"></i> Upload exel</a>-->
+                    </form>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -71,4 +77,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
     <script src="<?php assets('js/datamodif.js') ?>"></script>
+    <script src="<?php assets('js/uploadexel/uploadexel.js') ?>"></script>
 </js>
